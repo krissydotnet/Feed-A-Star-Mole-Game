@@ -13,12 +13,15 @@ function setupMoles(moles) {
             moles[i].addEventListener("click", function() {
                 if (moles[i].classList.contains("royal")) {
                     score = score + 2;
-                    moles[i].classList.add('fed-royal');      
+                    moles[i].classList.add('fed-royal');   
+                    setTimeout(1000);   
                     moles[i].classList.add('leaving-royal');
                     
                 } else {
                     score++;
-                    moles[i].classList.add('fed-mole');                 
+                    moles[i].classList.add('fed-mole');   
+                    setTimeout(1000);
+                    moles[i].classList.add('leaving-mole');       
                 }
                 
                 worm.style.width = (score * 10) + '%';
