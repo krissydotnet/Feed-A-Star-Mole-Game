@@ -16,6 +16,18 @@ body {
     justify-content: space-between;
     
 }
+.worm-box {
+    flex-basis: 99%;
+    
+}
+.worm-container {
+    overflow: hidden;
+    width: 0%;
+    transition: all 1s ease-in-out;
+}
+.worm-container img {
+    max-width: 1080px;
+}
 .hole {
     background-color: black;
     border-radius: 50%;
@@ -32,6 +44,43 @@ body {
     background-size: contain;
     background-position: center;
 }
+.mole:hover {
+    cursor: url(../images/cursor-worm.png), default;
+}
+.royal {
+    background-image: url(../images/king-mole-hungry.png);
+}
+.hungry-royal {
+    background-image: url(../images/king-mole-hungry.png);
+}
+.fed-royal {
+    background-image: url(../images/king-mole-fed.png);
+}
+.sad-royal {
+    background-image: url(../images/king-mole-sad.png);
+}
+.leaving-royal {
+    background-image: url(../images/king-mole-leaving.png);
+}
+.hungry-mole {
+    background-image: url(../images/mole-hungry.png);
+}
+.fed-mole {
+    background-image: url(../images/mole-fed.png);
+}
+.sad-mole {
+    background-image: url(../images/mole-sad.png);
+}
+.leaving-mole {
+    background-image: url(../images/mole-leaving.png);
+}
 .hide {
     display: none;
+}
+.winner {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.winner img {
+    width: 100%;
 }
